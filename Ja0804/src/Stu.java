@@ -27,7 +27,7 @@ public class Stu {
 		return stuNo;
 	}
 	public void setStuNo(int stuNo) {
-		this.stuNo = stuNo;
+		this.stuNo = stuNo;		
 	}
 	public String getName() {
 		return name;
@@ -39,7 +39,12 @@ public class Stu {
 		return kor;
 	}
 	public void setKor(int kor) {
-		this.kor = kor;
+		if (kor >= 0 && kor <= 100) {
+			this.kor = kor;
+		} else {
+			System.out.println("올바르게 입력해주세요. ");
+		}
+		
 	}
 	public int getEng() {
 		return eng;

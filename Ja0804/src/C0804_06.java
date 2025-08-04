@@ -11,7 +11,7 @@ public class C0804_06 {
 		list.add(new Stu("강감찬",70,100,100));
 		list.add(new Stu("김구",60,100,100));
 		
-		
+		((Stu) list.get(0)).setKor(1000);
 
 	}
 
